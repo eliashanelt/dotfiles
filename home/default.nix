@@ -9,6 +9,7 @@
   ];
   home.username = "elias";
   home.packages = with pkgs; [nerd-fonts.iosevka];
+  home.sessionVariables.EDITOR = "hx";
 
   programs.nushell = {
     enable = true;
