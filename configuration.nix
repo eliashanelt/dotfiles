@@ -111,6 +111,7 @@
     nautilus
     lxqt.lxqt-policykit
     networkmanagerapplet
+    google-chrome
   ];
 
   programs.hyprland = {
