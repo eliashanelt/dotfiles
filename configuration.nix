@@ -112,6 +112,10 @@
     lxqt.lxqt-policykit
     networkmanagerapplet
     google-chrome
+    esp-generate
+    probe-rs
+    espflash
+    espup
   ];
 
   programs.hyprland = {

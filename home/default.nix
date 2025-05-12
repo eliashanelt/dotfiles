@@ -6,22 +6,13 @@
     ./gtkTheme.nix
     ./wofi.nix
     ./wlogout
+    ./nushell.nix
   ];
   home.username = "elias";
   home.packages = with pkgs; [nerd-fonts.iosevka];
-  home.sessionVariables.EDITOR = "hx";
-
-  programs.nushell = {
-    enable = true;
-    settings = {
-      rm.always_trash = true;
-      cursor_shape.emacs = "line";
-      use_kitty_protocol = true;
-    };
-  };
-  programs.carapace = {
-    enable = true;
-    enableNushellIntegration = true;
+  home.sessionVariables = {
+    EDITOR = "hx";
+    LIBCLANG_PATH = "/home/elias/.rustup/toolchains/esp/xtensa-esp32-elf-clang/esp-19.1.2_20250225/esp-clang/lib";
   };
 
   programs.git = {
