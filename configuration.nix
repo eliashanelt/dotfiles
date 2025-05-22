@@ -116,6 +116,8 @@
     probe-rs
     espflash
     espup
+    kicad
+    blender
   ];
 
   programs.hyprland = {

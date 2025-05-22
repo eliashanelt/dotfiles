@@ -19,12 +19,12 @@
   boot.blacklistedKernelModules = ["nouveau"];
 
   fileSystems."/" = {
-    device = "/dev/disk/by-uuid/a2f3ecf0-cd87-49bb-9052-5bb838072834";
+    device = "/dev/disk/by-label/NIXROOT";
     fsType = "ext4";
   };
 
   fileSystems."/boot" = {
-    device = "/dev/disk/by-uuid/D8EE-7DA3";
+    device = "/dev/disk/by-label/NIXBOOT";
     fsType = "vfat";
     options = ["fmask=0022" "dmask=0022"];
   };
