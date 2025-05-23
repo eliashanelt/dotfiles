@@ -118,6 +118,7 @@
     espflash
     espup
     blender
+    kicad
     (pkgs.catppuccin-sddm.override
       {
         flavor = "mocha";
