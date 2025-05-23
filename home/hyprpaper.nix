@@ -2,8 +2,8 @@
   config.services.hyprpaper = {
     enable = true;
     settings = {
-      preload = "~/wallpaper.jpg";
-      wallpaper = ",~/wallpaper.jpg";
+      preload = "~/wallpaper.png";
+      wallpaper = ",~/wallpaper.png";
       splash = false;
       ipc = "off";
     };

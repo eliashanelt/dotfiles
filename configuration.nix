@@ -123,7 +123,7 @@
         flavor = "mocha";
         font = "Noto Sans";
         fontSize = "10";
-        background = "~/wallpaper.jpg";
+        background = "/home/elias/wallpaper.png";
         loginBackground = true;
       })
   ];
