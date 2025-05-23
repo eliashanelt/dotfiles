@@ -13,6 +13,11 @@ window#waybar {
     margin: 5px 5px;
 }
 
+window#waybar.empty #window {  
+ background:none;  
+}  
+
+
 #window {
     font-weight: bold;
     font-family: "IosevkaNerdFont";
@@ -32,18 +37,18 @@ window#waybar {
 
 #workspaces button {
   color: @lavender;
-  border-radius: 1rem;
-  padding: 0.4rem;
+  border-radius: 0.4rem;
+  padding: 0.4rem 0.8rem;
 }
 
 #workspaces button.active {
   color: @sky;
-  border-radius: 1rem;
+  border-radius: 0.4rem;
 }
 
 #workspaces button:hover {
   color: @sapphire;
-  border-radius: 1rem;
+  border-radius: 0.4rem;
 }
 
 #mode {
