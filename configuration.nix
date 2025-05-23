@@ -62,7 +62,12 @@
 
   services.displayManager.sddm = {
     enable = true;
-    # wayland.enable = true;
+    extraPackages = pkgs.lib.mkForce (with pkgs; [
+      libsForQt5.qt5.qtquickcontrols2
+      libsForQt5.qt5.qtgraphicaleffects
+      libsForQt5.qt5.qtsvg
+    ]);
+    theme = "${import ./packages/sddm-theme.nix {inherit pkgs;}}";
   };
 
   services.blueman.enable = true;
@@ -116,7 +121,6 @@
     probe-rs
     espflash
     espup
-    kicad
     blender
   ];
 

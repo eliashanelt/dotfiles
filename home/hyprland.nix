@@ -43,8 +43,8 @@
         follow_mouse = 1;
         sensitivity = -0.45;
         accel_profile = "flat";
-        repeat_rate = 100;
-        repeat_delay = 25;
+        repeat_rate = 75;
+        repeat_delay = 200;
       };
 
       general = {
