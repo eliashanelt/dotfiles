@@ -62,12 +62,8 @@
 
   services.displayManager.sddm = {
     enable = true;
-    extraPackages = pkgs.lib.mkForce (with pkgs; [
-      libsForQt5.qt5.qtquickcontrols2
-      libsForQt5.qt5.qtgraphicaleffects
-      libsForQt5.qt5.qtsvg
-    ]);
-    theme = "${import ./packages/sddm-theme.nix {inherit pkgs;}}";
+    theme = "catppuccin-mocha";
+    package = pkgs.kdePackages.sddm;
   };
 
   services.blueman.enable = true;
@@ -122,6 +118,14 @@
     espflash
     espup
     blender
+    (pkgs.catppuccin-sddm.override
+      {
+        flavor = "mocha";
+        font = "Noto Sans";
+        fontSize = "9";
+        background = "~/wallpaper.jpg";
+        loginBackground = true;
+      })
   ];
 
   programs.hyprland = {

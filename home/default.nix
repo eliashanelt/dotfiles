@@ -7,6 +7,7 @@
     ./wofi.nix
     ./wlogout
     ./nushell.nix
+    ./hyprpaper.nix
   ];
   home.username = "elias";
   home.packages = with pkgs; [nerd-fonts.iosevka];
