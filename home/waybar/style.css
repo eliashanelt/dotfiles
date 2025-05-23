@@ -25,7 +25,7 @@ window#waybar.empty #window {
     margin: 5px 5px;
     padding: 0px 16px;
     border-radius: 0.4rem;
-    opacity: 0.9;
+    opacity: 0.95;
 }
 
 #workspaces {
@@ -180,8 +180,8 @@ window#waybar.empty #window {
 
 tooltip {
   background-color: @surface0;
-  border: none;
   border-radius: 0.4rem;
+  border: none;
 }
 
 tooltip decoration {
