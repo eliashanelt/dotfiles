@@ -181,7 +181,7 @@ window#waybar.empty #window {
 tooltip {
   background-color: @surface0;
   border: none;
-  border-radius: 10px;
+  border-radius: 0.4rem;
 }
 
 tooltip decoration {
