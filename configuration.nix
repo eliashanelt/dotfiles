@@ -121,7 +121,7 @@
     (pkgs.catppuccin-sddm.override
       {
         flavor = "mocha";
-        font = "Noto Sans";
+        font = "IosevkaNerdFont";
         fontSize = "10";
         background = "${./wallpaper.png}";
         loginBackground = true;

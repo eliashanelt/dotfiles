@@ -1,24 +1,47 @@
+@import "mocha.css";
+
+
 * {
     border: none;
     border-radius: 0;
     font-family: "IosevkaNerdFont";
     font-size: 16px;
     min-height: 0;
-    margin: 0 8px;
+    /*margin: 0 8px;*/
 }
 
 window#waybar {
-    background: #1e1e2e;
-    border-bottom: 8px solid #1e1e2e;
-    color: #cdd6f4;
+    /*background: #1e1e2e;*/
+    background: transparent;
+    /*border-bottom: 8px solid #1e1e2e;*/
+    color: @text;
+    /*color: #cdd6f4;*/
+    margin: 5px 5px;
 }
 
 #window {
     font-weight: bold;
-    font-family: "Roboto";
+    /*font-family: "Roboto";*/
+    font-family: "IosevkaNerdFont";
 }
 
-button {
+
+#workspaces button {
+  color: @lavender;
+  border-radius: 1rem;
+  padding: 0.4rem;
+}
+
+#workspaces button.active {
+  color: @sky;
+  border-radius: 1rem;
+}
+
+#workspaces button:hover {
+  color: @sapphire;
+  border-radius: 1rem;
+}
+/*button {
     all: unset;
     background-color: #85c1dc;
     color: #282828;
@@ -48,7 +71,7 @@ button:hover {
 
 #workspaces {
     padding: 0 2px;
-}
+}*/
 
 
 #mode {
@@ -129,7 +152,7 @@ button:hover {
     padding-right: 7px;
 }
 
-#wireplumber {
+/*#wireplumber {
     color: #232634;
     font-weight: bold;
     background-color: #e5c890;
@@ -139,6 +162,12 @@ button:hover {
     margin-bottom: 2px;
     padding-left: 10px;
     padding-right: 7px;
+}*/
+
+#wireplumber {
+  color: @maroon;
+  border-radius: 1rem 0px 0px 1rem;
+  margin-left: 1rem;
 }
 
 #idle_inhibitor {
@@ -156,7 +185,7 @@ button:hover {
     background-color: #414559;
 }
 
-#tray {
+/*#tray {
     background-color: #ef9f76;
     border-bottom: 8px solid #d78963;
     border-radius: 5px;
@@ -164,14 +193,18 @@ button:hover {
     margin-bottom: 2px;
     padding-left: 10px;
     padding-right: 7px;
-}
+}*/
 
+#tray {
+  margin-right: 1rem;
+  border-radius: 1rem;
+}
 
 #battery {
 }
 
 #battery icon {
-    color: red;
+    color: @green;
 }
 
 #battery.charging {
@@ -203,7 +236,7 @@ button:hover {
 }
 
 #network.disconnected {
-    background: #f53c3c;
+    background: @red;
 }
 
 #pulseaudio {
