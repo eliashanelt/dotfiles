@@ -1,4 +1,8 @@
-{config, ...}: {
+{
+  config,
+  pkgs,
+  ...
+}: {
   programs.nushell = {
     enable = true;
     environmentVariables = config.home.sessionVariables;
@@ -27,7 +31,7 @@
     };
     shellAliases = {
       ":q" = "exit";
-      cat = "bat";
+      cat = "${pkgs.bat}/bin/bat";
       icat = "kitten icat";
       mv = "mv -i";
       "nix develop" = "nix develop --command nu";
