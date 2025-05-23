@@ -122,7 +122,7 @@
       {
         flavor = "mocha";
         font = "Noto Sans";
-        fontSize = "9";
+        fontSize = "10";
         background = "~/wallpaper.jpg";
         loginBackground = true;
       })
