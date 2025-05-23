@@ -22,7 +22,7 @@ in {
         layer = "top";
         position = "top";
         height = 40;
-        spacing = 8;
+        spacing = 5;
         modules-left = ["hyprland/workspaces" "hyprland/mode" "hyprland/scratchpad" "custom/media" "custom/spotify"];
         modules-center = ["hyprland/window"];
         modules-right = ["tray" "idle_inhibitor" "wireplumber" "custom/weather" "cpu" "memory" "temperature" "backlight" "battery" "battery#bat2" "clock" "custom/power"];

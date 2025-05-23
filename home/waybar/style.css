@@ -20,7 +20,7 @@ window#waybar {
     margin: 5px 5px;
     padding: 0px 16px;
     border-radius: 1rem;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 #workspaces {
