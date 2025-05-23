@@ -19,12 +19,12 @@ window#waybar {
     background-color: @surface0;
     margin: 5px 5px;
     padding: 0px 16px;
-    border-radius: 1rem;
+    border-radius: 0.4rem;
     opacity: 0.9;
 }
 
 #workspaces {
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   margin: 5px;
   background-color: @surface0;
   margin-left: 1rem;
@@ -96,7 +96,7 @@ window#waybar {
 
 #custom-power {
     margin-right: 1rem;
-    border-radius: 0px 1rem 1rem 0px;
+    border-radius: 0px 0.4rem 0.4rem 0px;
     color: @red;
 }
 
@@ -127,7 +127,7 @@ window#waybar {
 }
 
 #idle_inhibitor {
-    border-radius: 1rem 0px 0px 1rem;
+    border-radius: 0.4rem 0px 0px 0.4rem;
     margin-left: 1rem;
     color: @mauve;
 }
@@ -138,7 +138,7 @@ window#waybar {
 
 #tray {
   margin-right: 1rem;
-  border-radius: 1rem;
+  border-radius: 0.4rem;
 }
 
 #battery {
