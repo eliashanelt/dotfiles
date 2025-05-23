@@ -12,7 +12,10 @@ in {
       enable = true;
       target = "hyprland-session.target";
     };
-    style = builtins.readFile ./style.css;
+    style = lib.concatMapStringsSep "\n" builtins.readFile [
+      ./mocha.css
+      ./style.css
+    ];
     settings = [
       {
         output = "DP-4";
