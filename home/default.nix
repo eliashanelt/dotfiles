@@ -18,6 +18,7 @@
 
   programs.git = {
     enable = true;
+    delta.enable = true;
     userName = "Elias Hanelt";
     userEmail = "elias.hanelt@gmail.com";
   };
